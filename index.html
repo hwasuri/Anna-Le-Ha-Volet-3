@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon TP</title>
+
+    <!-- ==== STYLESHEET ==== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ==== JAVASCRIPT ==== -->
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ======================================== INTRO ======================================== -->
+    <section id="intro" class="invisible">
+      <div id="regles">
+        <h1>Pokémon TP Volet 3</h1>
+        <h2>Par Anna Le-Ha</h2>
+
+        <div id="starters">
+          <img
+            src="assets/images/sprites/pokemon/bulbasaur.gif"
+            class="starter"
+            id="bulbasaur"
+          />
+          <img
+            src="assets/images/sprites/pokemon/charmander.gif"
+            class="starter"
+            id="charmander"
+          />
+          <img
+            src="assets/images/sprites/pokemon/squirtle_front.gif"
+            class="starter"
+            id="squirtle"
+          />
+        </div>
+
+        <button id="btn">Démarrer</button>
+        <p>But du jeu: <br />Attrapez Mélofée</p>
+      </div>
+    </section>
+
+    <!-- ======================================== JEU ======================================== -->
+    <main id="jeu" class="invisible">
+      <!-- ==== DIALOGUE ==== -->
+      <h1 id="dialogue">Qu'allez-vous faire?</h1>
+
+      <section id="pokemon-placement">
+        <!-- ==== ENNEMI ==== -->
+        <img
+          src="assets/images/sprites/pokemon/clefairy_front.png"
+          id="pokemon-ennemi"
+        />
+        <p id="nom-ennemi">Mélofée</p>
+        <p id="hp-ennemi">60/60</p>
+        <p id="hp-perdu" class="invisible"></p>
+        <img src="assets/images/elements/pow.png" id="pow" class="invisible" />
+
+        <!-- ==== JOUEUR ==== -->
+        <img src="" id="pokemon-allie" />
+        <p id="nom-pokemon">nyan</p>
+        <p id="hp-pokemon">50/50</p>
+
+        <!-- ==== BOUTONS ==== -->
+        <section id="options" class="invisible">
+          <div id="btntop">
+            <button id="btn1"></button>
+            <button id="btn2"></button>
+          </div>
+
+          <div id="btnbottom">
+            <button id="btn3"></button>
+            <button id="btn4"></button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+/* ======================================== BASE ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: "Press Start 2P";
+}
+
+.invisible {
+  display: none !important;
+}
+
+/* ======================================== INTRO ======================================== */
+#intro {
+  background-image: url(../images/elements/lab.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  padding: 4px;
+  font-size: 18px;
+  color: rgb(12, 57, 18);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#regles {
+  background-color: rgba(35, 124, 47, 0.5);
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(30, 91, 37, 0.5);
+  width: 80vh;
+  height: 60vh;
+  text-align: center;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(12, 57, 18);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+p {
+  margin: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#starters {
+  width: 350px;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+/* ==== HOVER ==== */
+.starter {
+  width: 75px;
+  height: fit-content;
+  transition: transform 0.5s;
+}
+
+.starter:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+/* ======================================== JEU ======================================== */
+#jeu {
+  height: 100vh;
+  background-image: url("../images/elements/battleground_bw.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* === DIALOGUE === */
+#dialogue {
+  width: 880px;
+  height: 206px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 78.3%;
+  left: 14.2%;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==== BOUTONS ==== */
+#options {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 79%;
+  left: 62.4%;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
+  width: 201px;
+  height: 95px;
+  margin: 0;
+  padding: 15px;
+}
+
+#btntop,
+#btnbottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.2);
+}
+
+/* === EFFETS === */
+#pow {
+  filter:grayscale();
+  image-rendering: pixelated;
+  width: 100px;
+  position: absolute;
+  top: 18%;
+  left: 66%;
+}
+
+#hp-perdu {
+  font-size: 1.5rem;
+  color: red;
+  position: absolute;
+  top: 13%;
+  left: 70%;
+}
+
+
+/* === POKEMON RENDER === */
+#pokemon-ennemi {
+  width: 20vw;
+  image-rendering: pixelated;
+  position: absolute;
+  top: -2%;
+  left: 54.5%;
+}
+
+#nom-ennemi {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 7%;
+  left: 20%;
+}
+
+#hp-ennemi {
+  font-size: 20px;
+  position: absolute;
+  top: 17%;
+  left: 30%;
+}
+
+#pokemon-allie {
+  width: 20vw;
+  image-rendering: pixelated;
+  position: absolute;
+  top: 37.8%;
+  left: 20%;
+}
+
+#nom-pokemon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 51%;
+  left: 59%;
+}
+
+#hp-pokemon {
+  font-size: 20px;
+  position: absolute;
+  top: 61%;
+  left: 69%;
+}
